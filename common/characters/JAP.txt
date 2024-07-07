@@ -42,37 +42,8 @@ characters={
 		}
 	}
 
-	JAP_tomoyuki_yamashita={
-		name=JAP_tomoyuki_yamashita
-		portraits={
-			army={
-				small="GFX_idea_tomoyuki_yamashita"
-				large=GFX_portrait_JAP_tomoyuki_yamashita
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = tomoyuki_yamashita
-			ledger = army
-			allowed = {
-				original_tag = JAP
-			}
-			traits = {
-				grand_battle_plan_expert
-			}
-		}
-
-		corps_commander={
-			traits={ brilliant_strategist politically_connected trickster trait_engineer }
-			skill=5
-			attack_skill=4
-			defense_skill=5
-			planning_skill=3
-			logistics_skill=4
-			legacy_id=0
-		}
-	}
+	### 元帥 ###
+	#### バニラ ###
 
 	JAP_hisaichi_terauchi={
 		name=JAP_hisaichi_terauchi
@@ -136,6 +107,109 @@ characters={
 			attack_skill=3
 			defense_skill=4
 			planning_skill=2
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
+	#### 追加 ####
+
+	JAP_kanin_kotohito={
+		name=JAP_kanin_kotohito
+		portraits={
+			army={
+				small="GFX_idea_kanin_kotohito"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = kanin_kotohito
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+			cost =  50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	JAP_hajime_sugiyama={
+		name=JAP_hajime_sugiyama
+		portraits={
+			army={
+				small="GFX_idea_hajime_sugiyama"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = hajime_sugiyama
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				has_completed_focus = JAP_army_expansion
+			}
+			traits = {
+				army_chief_drill_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	
+	### 将軍 ###
+	#### バニラ ###
+	JAP_tomoyuki_yamashita={
+		name=JAP_tomoyuki_yamashita
+		portraits={
+			army={
+				small="GFX_idea_tomoyuki_yamashita"
+				large=GFX_portrait_JAP_tomoyuki_yamashita
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = tomoyuki_yamashita
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				grand_battle_plan_expert
+			}
+		}
+
+		corps_commander={
+			traits={ brilliant_strategist politically_connected trickster trait_engineer }
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
 			logistics_skill=4
 			legacy_id=0
 		}
@@ -673,6 +747,9 @@ characters={
 		}
 	}
 
+	### 提督/ADMIRAL ###
+	#### バニラ ###
+
 	JAP_isoroku_yamamoto={
 		name=JAP_isoroku_yamamoto
 		portraits={
@@ -936,7 +1013,7 @@ characters={
 	}
 
 
-	### THEORISTS ###
+	### 理論家/THEORISTS ###
 
 	# Yamashita up there
 
@@ -1052,56 +1129,11 @@ characters={
 	}
 
 
-	### ARMY CHIEFS ###
+	### 陸軍長官/ARMY CHIEFS ###
 
-	JAP_kanin_kotohito={
-		name=JAP_kanin_kotohito
-		portraits={
-			army={
-				small="GFX_idea_kanin_kotohito"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = kanin_kotohito
-			allowed = {
-				original_tag = JAP
-			}
-			traits = {
-				army_chief_offensive_1
-			}
-			cost =  50
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
+	#kanin kotohito
 
-	JAP_hajime_sugiyama={
-		name=JAP_hajime_sugiyama
-		portraits={
-			army={
-				small="GFX_idea_hajime_sugiyama"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = hajime_sugiyama
-			allowed = {
-				original_tag = JAP
-			}
-			available = {
-				has_completed_focus = JAP_army_expansion
-			}
-			traits = {
-				army_chief_drill_3
-			}
-			cost = 200
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
+	#hajime sugiyama
 
 	JAP_hideki_tojo={
 		name=JAP_hideki_tojo
@@ -1126,7 +1158,7 @@ characters={
 		}
 	}
 
-	### NAVY CHIEFS ###
+	### 海軍長官/NAVY CHIEFS ###
 
 	JAP_fushimi_hiroyasu={
 		name=JAP_fushimi_hiroyasu
@@ -1198,7 +1230,7 @@ characters={
 	}
 
 
-	### AIR CHIEFS ###
+	### 空軍長官/AIR CHIEFS ###
 
 	# Doihara up there
 
@@ -1249,7 +1281,7 @@ characters={
 	}
 
 
-	### MILITARY HIGH COMMAND ###
+	### 軍最高司令部/MILITARY HIGH COMMAND ###
 
 	# Hata up there
 
@@ -1380,7 +1412,7 @@ characters={
 	}
 
 
-	### POLITICAL ADVISORS ###
+	### 政治顧問/POLITICAL ADVISORS ###
 
 	JAP_sanzo_nosaka={
 		name=JAP_sanzo_nosaka
